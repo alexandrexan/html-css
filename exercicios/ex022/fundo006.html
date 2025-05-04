@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: grey;
+            
+            /* background-color: grey;
             background-image: url(imagens/wallpaper002.jpg);
             background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
             background-size: cover;
+             */
+            
+
+            /* Shorthand - background
+            ordem -> color > image (url) > repeat > attachment > position > size com /
+            */
+
+            background: black url(imagens/wallpaper002.jpg) no-repeat fixed center center / cover;
         }
 
         main {
             background-color: gold;
-            width: 500px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 2px solid black;
@@ -29,7 +40,19 @@
             Imagem de Fundo
         </h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, architecto doloribus. Deleniti sequi quidem distinctio recusandae voluptatibus, assumenda officiis cupiditate aliquam nam nemo ratione sit. Quas repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ea labore beatae accusantium distinctio, debitis, sint autem fugit facere soluta officia aliquid mollitia corporis aperiam sed perspiciatis suscipit a cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, architecto doloribus. Deleniti sequi quidem distinctio recusandae voluptatibus, assumenda officiis cupiditate aliquam nam nemo ratione sit. Quas repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ea labore beatae accusantium distinctio, debitis, sint autem fugit facere soluta officia aliquid mollitia corporis aperiam sed perspiciatis suscipit a cumque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, architecto doloribus. Deleniti sequi quidem distinctio recusandae voluptatibus, assumenda officiis cupiditate aliquam nam nemo ratione sit. Quas repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ea labore beatae accusantium distinctio, debitis, sint autem fugit facere soluta officia aliquid mollitia corporis aperiam sed perspiciatis suscipit a cumque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, architecto doloribus. Deleniti sequi quidem distinctio recusandae voluptatibus, assumenda officiis cupiditate aliquam nam nemo ratione sit. Quas repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ea labore beatae accusantium distinctio, debitis, sint autem fugit facere soluta officia aliquid mollitia corporis aperiam sed perspiciatis suscipit a cumque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, architecto doloribus. Deleniti sequi quidem distinctio recusandae voluptatibus, assumenda officiis cupiditate aliquam nam nemo ratione sit. Quas repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ea labore beatae accusantium distinctio, debitis, sint autem fugit facere soluta officia aliquid mollitia corporis aperiam sed perspiciatis suscipit a cumque.Lorem ipsum dos cupiditate aliquam nam nemo ratione sit. Quas repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ea labore beatae accusantium distinctio, debitis, sint autem fugit facere soluta officia aliquid mollitia corporis aperiam sed perspiciatis suscipit a cumque.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, architecto doloribus. Deleniti sequi quidem distinctio recusandae voluptatibus, assumenda officiis cupiditate aliquam nam nemo ratione sit. Quas repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sis repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ea labore beatae accusantium distinctio, debitis, sint autem fugit facere soluta officia aliquid mollitia corporis aperiam sed perspiciatis suscipit a cumque.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            <br>
+            <br>
+            Quibusdam, architecto doloribus. Deleniti sequi quidem distinctio recusandae voluptatibus, assumenda officiis cupiditate aliquam nam nemo ratione sit. Quas repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ea labore beatae accusantium distinctio, debitis, sint autem fugit facere soluta officia aliquid mollitia corporis aperiam sed perspiciatis suscipit a cumque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, architecto doloribus. Deleniti sequi quidem distinctio recusandae voluptatibus, assumenda officiis cupiditate aliquam nam nemo ratione sit. 
+            <br>
+            <br>
+            Quas repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ea labore beatae accusantium distinctio, debitis, sint autem fugit facere soluta officia aliquid mollitia corporis aperiam sed perspiciatis suscipit a cumque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, architecto doloribus. Deleniti sequi quidem distinctio recusandae voluptatibus, assumenda officiis cupiditate aliquam nam nemo ratione sit. Quas repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <br>
+            <br>
+            Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ea labore beatae accusantium distinctio, debitis, sint autem fugit facere soluta officia aliquid mollitia corporis aperiam sed perspiciatis suscipit a cumque.Lorem ipsum dos cupiditate aliquam nam nemo ratione sit. Quas repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            <br>
+            <br>
+             Nulla ea labore beatae accusantium distinctio, debitis, sint autem fugit facere soluta officia aliquid mollitia corporis aperiam sed perspiciatis suscipit a cumque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ea labore beatae accusantium distinctio, debitis, sint autem fugit facere soluta officia aliquid mollitia corporis aperiam sed perspiciatis suscipit a cumque.Lorem ipsum dolor sit amet consectetur, adipisicing elit. repudiandae a quam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas perspiciatis molestias repudiandae odit maxime odio possimus nisi sint omnis obcaecati, nobis nostrum, et consectetur ad ducimus fugit, quam laborum! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         </p>
     </main>
 </body>
