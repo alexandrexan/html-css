@@ -1,2 +1,5 @@
 @charset "UTF-8";
 
+section {
+    white-space: pre-line;
+}
