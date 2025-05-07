@@ -62,23 +62,36 @@ section.normal {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.733);
     color: white;
+    box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.356)
 }
 
 section.imagem p {
-    background-color: rgba(0, 0, 0, 0.151);
+    background-color: rgba(0, 0, 0, 0.301);
     display: inline-block;
-    padding-left: 20px;
-    padding-right: 10px;
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
 }
 
 section {
     font-family: var(--fonte-textos);
-    font-size: 5vw;
+    font-size: 4vw;
     white-space: pre-line;
-    padding-top: 10vh;
+    padding-top: 0vh;
     padding-bottom: 10vh;
     padding-left: 35px;
     line-height: 2.5em;
+}
+
+section#img1 {
+    background-image: url(imagens/capa-album.jpeg);
+    background-attachment: fixed;
+
+}
+
+section#img2 {
+    background-image: url(imagens/capa-album.jpeg);
+    background-attachment: fixed;
+
 }
 
 footer {
