@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            background-color: darkgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 25px;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: lightgray;
+        }
+
+        .posicao {
+            text-align: right;
+        }
+
+        .populacao {
+            text-align: right;
+        }
+
+        .pais {
+            text-align: center;
+        }
+
+        img.flag {
+            width: 20px;
+            height: auto;
+            max-width: 100%;
+            margin-right: 5px;
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    
+        <!-- ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+        -->
+    <table>
+        <caption>
+            Lista de Países por População
+        </caption>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>País</th>
+                <th style="width: 150px;">Estimativa da ONU</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td class="posicao">1</td>
+            <td class="pais"> <img src="flags/Flag_of_India.svg.png" alt="pais india" class="flag">Índia</td>
+            <td class="populacao">1 429 921 746</td>
+            <tr>
+                <td class="posicao">2</td>
+                <td class="pais"> <img src="flags/China.svg.webp" alt="pais china" class="flag">China</td>
+                <td class="populacao">1 426 391 281</td>
+            </tr>
+            <tr>
+                <td class="posicao">3</td>
+                <td class="pais"> <img src="flags/United_States.svg.webp" alt="pais estados unidos" class="flag">Estados Unidos</td>
+                <td class="populacao">346 353 341</td>
+            </tr>
+            <tr>
+                <td class="posicao">4</td>
+                <td class="pais"> <img src="flags/Indonesia.svg.png" alt="pais indonesia" class="flag">Indonésia</td>
+                <td class="populacao">277 184 719</td>
+            </tr>
+            <tr>
+                <td class="posicao">5</td>
+                <td class="pais"> <img src="flags/Pakistan.svg.png" alt="pais paquistão" class="flag">Paquistão</td>
+                <td class="populacao">240 215 932</td>
+            </tr>
+            <tr>
+                <td class="posicao">6</td>
+                <td class="pais"> <img src="flags/Nigeria.svg.png" alt="pais nigeria" class="flag">Nigéria</td>
+                <td class="populacao">223 899 057</td>
+            </tr>
+            <tr>
+                <td class="posicao">7</td>
+                <td class="pais"> <img src="flags/Brazil.svg.webp" alt="pais brasil" class="flag">Brasil</td>
+                <td class="populacao">203 493 629</td>
+            </tr>
+            <tr>
+                <td class="posicao">8</td>
+                <td class="pais"> <img src="flags/Bangladesh.svg.png" alt="pais bangladesh" class="flag">Bangladesh</td>
+                <td class="populacao">172 452 382</td>
+            </tr>
+            <tr>
+                <td class="posicao">9</td>
+                <td class="pais"> <img src="flags/Russia.svg.webp" alt="pais russia" class="flag">Rússia</td>
+                <td class="populacao">146 140 931</td>
+            </tr>
+            <tr>
+                <td class="posicao">10</td>
+                <td class="pais"> <img src="flags/Mexico.svg.webp" alt="pais mexico" class="flag">México</td>
+                <td class="populacao">134 127 189</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <p><a href="https://pt.wikipedia.org/wiki/Lista_de_pa%C3%ADses_por_popula%C3%A7%C3%A3o" target="_blank">Fonte</a></p>
+</body>
+</html> 
