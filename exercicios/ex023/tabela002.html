@@ -18,6 +18,7 @@
             width: 500px;
             border-collapse: collapse;
             margin: 0 auto;
+            position: relative;
         }
 
         caption {
@@ -33,6 +34,16 @@
         }
 
         thead {
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) { /* (even)-> 2n - (odd)-> 2n-1 */
             background-color: lightgray;
         }
 
@@ -56,13 +67,17 @@
         }
 
         p {
-            text-align: center;
             font-weight: bold;
+            width: 50px;
+            margin: 30px auto;
+            padding: 5px;
+            background-color: lightgray;
+            text-align: center;
         }
         
         a {
             text-decoration: none;
-            color: black
+            color: black;
         }
     </style>
 </head>
