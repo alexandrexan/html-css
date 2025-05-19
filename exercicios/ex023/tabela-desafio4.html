@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #ff8906, #f25f4c);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table {
+            height: 300px;
+            width: 700px;
+            border-collapse: collapse;;
+        }
+        th, td {
+            border: 2px solid black;
+            text-align: center; 
+            padding: 5px;
+        }
+        caption {
+            font-size: 2em;
+            padding: 10px;
+        }
+            
+    </style>
+</head>
+<body>
+    <h1>Alcance das Cédulas</h1>
+    <table>
+        <caption>DESAFIO 04</caption>
+        <thead>
+            <tr>
+                <th>Grupo</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes Favoritos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" style="background-color: palevioletred; font-weight: bold;">Mulheres</td>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+                
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td rowspan="3" style="background-color: rgb(123, 123, 255); font-weight: bold;">Homens</td>
+                <td>Bruno Mendonça</td>
+                <td>intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold; background-image: linear-gradient(to left, #ff8906, #f25f4c);">XAN</td>
+                <td>Velozes e Furiosos 1</td>
+                <td>Transformers 1</td>
+                <td>Colateral</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+</html>
