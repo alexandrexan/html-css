@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: darkslateblue;
+            color: whitesmoke;
+        
+        }
+        table {
+            width: 550px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.3em;
+            padding: 15px;
+        }
+        th, td {
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            height: 30px;
+        }
+        .destaque {
+            background-color: rgba(253, 90, 90, 0.658);
+        }
+        .cgrupo {
+            background-color: darkcyan;
+        }
+        .cidade {
+            background-color: darkgreen;
+        }
+        .cprofissao {
+            background-color: darkviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cgrupo" span="2">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Kobe</td>
+            <td>Macho</td>
+            <td>9 Anos</td>
+            <td>Cachorro</td>
+        </tr>
+        <tr>
+            <td>Xan</td>
+            <td>Masculino</td>
+            <td>33 Anos</td>
+            <td>Desenvolvedor Front-End</td>
+        </tr>
+        <tr>
+            <td>Mirna</td>
+            <td>Feminino</td>
+            <td>36 Anos</td>
+            <td>Gosta de reclamar</td>
+        </tr>
+        <tr>
+            <td>Bolt e Paco</td>
+            <td>Macho</td>
+            <td>3 Anos</td>
+            <td>Arrumar confusão</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
