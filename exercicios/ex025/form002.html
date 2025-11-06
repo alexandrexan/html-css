@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários002</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #F5F5F5;
+            color: #000000;
+        }
+        div {
+            padding: 20px;
+            border: 2px solid #000000;
+            width: fit-content;
+            margin-bottom: 15px;
+        }
+        .botao {
+            background: #0056b3;
+            color: #F5F5F5;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .botao:hover {
+            background: #4ECB8D;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+
+    <form action="cadastro.php" method="post">
+
+    <div>
+        <label for="usuario">Nome de Usuário:</label>
+        <input type="text" id="usuario" name="usuario" required minlength="3" maxlength="12" size="12" autocomplete="username">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required minlength="6" maxlength="18" size="18" autocomplete="current-password">
+        <input class="botao" type="submit" value="Login">
+    </div>
+</body>
+</html>
