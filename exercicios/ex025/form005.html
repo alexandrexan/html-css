@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 005</title>
+    <style>
+        body {
+            background: #0264b96e;
+            font-family: 'Arial', sans-serif;
+        }
+        input[type="submit"], input[type="reset"] {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0288d1;
+            color: white;
+            cursor: pointer;
+        }
+        fieldset {
+            border: 2px solid #000000;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+        legend {
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário 005</h1>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="basket" id="basket">
+            <label for="basket">Basquete</label>
+            <input type="checkbox" name="futebol" id="futebol">
+            <label for="futebol">Futebol</label>
+            <input type="checkbox" name="corrida" id="corrida">
+            <label for="corrida">Corrida</label>
+            <input type="checkbox" name="natação" id="natação">
+            <label for="natação">Natação</label>
+        </fieldset>
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+</body>
+</html>
