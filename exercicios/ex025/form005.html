@@ -18,14 +18,27 @@
             color: white;
             cursor: pointer;
         }
+        input[type="submit"]:hover {
+            background-color: #02a12a;
+        }
+        input[type="reset"]:hover {
+            background-color: #d10202;
+        }
         fieldset {
             border: 2px solid #000000;
             border-radius: 10px;
             padding: 20px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 8px #0000004d;
+            display: inline-block;
         }
         legend {
-            
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        label {
+            margin-right: 15px;
+            font-size: 18px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -33,21 +46,28 @@
     <h1>Formulário 005</h1>
     <form action="" method="get" autocomplete="on">
         <fieldset>
+                <legend>Com qual gênero você se identifica?</legend>
+                <input type="radio" name="sexo" id="masculino" value="masculino">
+                <label for="masculino">Masculino &#x1F468;</label>
+                <input type="radio" name="sexo" id="feminino" value="feminino">
+                <label for="feminino">Feminino &#x1F469;</label>
+            </fieldset>
+            <br><br><br>
+        <fieldset>
             <legend>Esportes Favoritos</legend>
             <input type="checkbox" name="basket" id="basket">
-            <label for="basket">Basquete</label>
+            <label for="basket">Basquete &#x1F3C0;</label>
             <input type="checkbox" name="futebol" id="futebol">
-            <label for="futebol">Futebol</label>
+            <label for="futebol">Futebol &#x26BD;</label>
             <input type="checkbox" name="corrida" id="corrida">
-            <label for="corrida">Corrida</label>
+            <label for="corrida">Corrida &#x1F3C3;</label>
             <input type="checkbox" name="natação" id="natação">
-            <label for="natação">Natação</label>
+            <label for="natação">Natação &#x1F3CA;</label>
         </fieldset>
-
+        <br><br>
 
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
-
     </form>
 </body>
 </html>
