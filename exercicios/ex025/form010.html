@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 010</title>
+</head>
+<body>
+    <h1>Formulário 010</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <label for="ano">Seu ano de nascimento:</label>
+        <input type="number" id="ano" name="ano" min="1900" max="2025" required>
+
+        <br><br>
+
+        <label for="idade">Sua idade:</label>
+        <output id="idade">0</output>
+
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <script>
+        const anoInput = document.getElementById('ano');
+        const idadeOutput = document.getElementById('idade');
+
+        anoInput.addEventListener('input', () => {
+            const currentYear = new Date().getFullYear();
+            const birthYear = parseInt(anoInput.value);
+            if (!isNaN(birthYear) && birthYear <= currentYear) {
+                const age = currentYear - birthYear;
+                idadeOutput.value = age;
+            } else {
+                idadeOutput.value = 0;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 009</title>
+</head>
+<body>
+    <h1>Formulário 009</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <label for="num">Número:</label>
+        <input type="range" id="num" name="num" min="0" max="50" value="0" step="1">
+        <output for="num" id="numOutput">0</output>
+
+        
+
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <script>
+            const numInput = document.getElementById('num');
+            const numOutput = document.getElementById('numOutput');
+            numInput.addEventListener('input', () => {
+                numOutput.value = numInput.value;
+            });
+        </script>
+</body>
+</html>
