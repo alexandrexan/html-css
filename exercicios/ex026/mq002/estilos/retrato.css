@@ -2,3 +2,7 @@
 
 /* * Aparelhos em pé (portrait) */
 
+body {
+    background-image: url(../imgs/cev-portrait.jpg);
+    background-position: center bottom;
+}
