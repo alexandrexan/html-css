@@ -1,4 +1,43 @@
 @charset "UTF-8";
 
-/* ! Todas as media queries */
+/* * Todas as media queries
 
+/* ! Typical Devices Breakpoints - Referências 2025
+---------------------------------------------------------------------
+/* ? Celulares telas pequenas modo retrato (portrait) - 320px - 480px
+/* ? Celulares telas pequenas modo paisagem (landscape) - 481px - 600px
+/* ? Tablets telas pequenas modo retrato (portrait) - 601px - 768px
+/* ? Tablets telas pequenas modo paisagem (landscape) - 769px - 1024px
+/* ? Desktops/Laptops telas pequenas/médias - 1025px - 1280px
+/* ? Desktops telas grandes/alta resolução - 1281px - 1440px
+/* ? Desktops/TVs telas maiores/4K - 1441px ou mais
+--------------------------------------------------------------------- */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* * Estilos para Tablets */
+    body {
+        background-image: url(../imgs/back-tablet.jpg);
+        img.tablet { display: block; }
+        img.phone { display: none; }
+    }
+    
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* * Estilos para Desktops/Laptops */
+    body {
+        background-image: url(../imgs/back-pc.jpg);
+        img.pc { display: block; }
+        img.phone { display: none; }
+    }
+    
+}
+
+@media screen and (min-width: 1441px) {
+    /* * Estilos para Desktops/TVs */
+    body {
+        background-image: url(../imgs/back-tv.jpg);
+        img.tv { display: block; }
+        img.phone { display: none; }
+    }
+}
