@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    menu {
+        display: block !important;
+        text-align: center;
+    }
+
+    menu li {
+        display: inline-block;
+    }
+
+    menu li a {
+        border-right: 1px solid #ffffff;
+    }
+
+    menu li a:last-child {
+        border-right: none;
+    }
+
+    main {
+        width: 768px;
+    }
+}
