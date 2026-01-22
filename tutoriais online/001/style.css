@@ -30,6 +30,7 @@ body {
     height: 200px;
     opacity: 0.9;
     background: linear-gradient(to right, #61210f, #ea2b1f);
+    animation: mudarCores 12s linear infinite;
 
 }
 
@@ -60,5 +61,35 @@ body {
 @keyframes rotate {
     100% {
         transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+@keyframes mudarCores {
+    0% {
+        background: linear-gradient(to right, #FF0080, #FF8C00);
+    }
+
+    16.67% {
+        background: linear-gradient(to right, #00D9FF, #0099FF);
+    }
+
+    33.33% {
+        background: linear-gradient(to right, #39FF14, #00FF00);
+    }
+
+    50% {
+        background: linear-gradient(to right, #FF00FF, #FF0080);
+    }
+
+    66.67% {
+        background: linear-gradient(to right, #FFD700, #FF8C00);
+    }
+
+    83.33% {
+        background: linear-gradient(to right, #00FFFF, #0099FF);
+    }
+
+    100% {
+        background: linear-gradient(to right, #FF0080, #FF8C00);
     }
 }
