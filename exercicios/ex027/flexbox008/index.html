@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            background: rgb(45, 45, 45);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .conteiner {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 10px;
+            height: 500px;
+            align-items: flex-start;
+        }
+
+        .item {
+            background: tomato;
+            border: 2px solid rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        .letras1 {
+            align-self: stretch;
+            background: olive
+        }
+
+        .letras2 {
+            
+        }
+
+        .letras3 {
+            align-self: flex-end;
+        }
+
+        .letras4 {
+            
+        }
+
+        .letras5 {
+            
+        }
+
+        .letras6 {
+            align-self: center;
+        }
+
+        .letras7 {
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="item letras1">A</div>
+        <div class="item letras2">B</div>
+        <div class="item letras3">C</div>
+        <div class="item letras4">D</div>
+        <div class="item letras5">E</div>
+        <div class="item letras6">F</div>
+        <div class="item letras7">G</div>
+    </div>
+</body>
+
+</html>
