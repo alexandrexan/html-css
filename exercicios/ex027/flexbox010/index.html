@@ -10,39 +10,39 @@
             font-family: Arial, Helvetica, sans-serif;
             color: white;
         }
+
         .conteiner {
-            background: #ffffff;
+            background: #ffffff54;
             display: flex;
             gap: 10px;
             margin-bottom: 30px;
             flex-flow: row nowrap;
         }
+
         .item {
             background: tomato;
             border: 2px solid rgb(0, 0, 0);
             text-align: center;
-            flex-basis: 200px;
         }
-        .conteiner2 {
-            background: #ffffff;
-            display: flex;
-            gap: 10px;
-            flex-flow: row nowrap;
+
+        #letraA {
+            flex: 1 0 200px;
+        }
+
+        #letraB {
+            flex: 1 1 150px;
+        }
+
+        #letraC {
+            flex: 1 8 auto;
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item" style="flex-grow: 1;">BBBBBBBBBBBBB</div>
-        <div class="item">C</div>
-        <div class="item" style="flex-shrink: 2;">Teste Teste Teste</div>
-        <div class="item" style="flex: 1 0 300px;">G</div>
-    </div>
-    <div class="conteiner2">
-        <div class="item" style="flex: 0 1 150px;">Lorem ipsum dolor sit amet.</div>
-        <div class="item" style="flex: 2 0 200px;">Lorem ipsum dolor sit amet.</div>
-        <div class="item" style="flex: 1 2 150px;">Lorem ipsum dolor sit amet.</div>
+        <div class="item" id="letraA">A</div>
+        <div class="item" id="letraB">B</div>
+        <div class="item" id="letraC">C</div>
     </div>
 </body>
 </html>
